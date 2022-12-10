@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,span,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+    --primaryColor: #FF6F61
+}
+body{
+    font-family: var(--primaryFont);
+}
+.button{
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 19px 37px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* Navbar Star Here */
+#CustomNav ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #11161E;
+    padding: 42px 23px;
+}
+#CustomNav ul li:hover a{
+    color: var(--primaryColor);
+}
+
+nav .iconLavel ul li{
+    display: inline-block;
+}
+
+nav .iconLavel ul li span,
+nav .iconLavel ul li a{
+    font-size: 18px;
+    padding: 0 14px;
+    color: #11161E;
+    position: relative;
+}
+
+nav .iconLavel ul li a .overlay {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--primaryColor);
+    display: block;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 0;
+    text-align:center;
+    line-height: 15px;
+    color: white;
+    top: 0;
+    right: 7px;
+}
+nav .togglerbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 15px;
+}
+nav #sidemenu .offcanvaslogo {
+    height: 40px;
+}
+nav #sidemenu .side-menu li a{
+    font-size: 18px;
+    color: #11161E;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    padding: 10px 20px;
+}
+nav #sidemenu .iconLavel{
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Navbar End Here */
+
+/* Banner Star*/
+#banner .banner_slider {
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+}
+  
+#banner .banner_slider .row {
+    height: 800px;
+  }
+  
+#banner .banner_slider .banner_ctn {
+    width: 45%;
+  }
+  
+#banner .banner_slider .banner_ctn h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1d1d1d;
+}
+#banner .banner_slider .banner_ctn h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: #1d1d1d;
+    transition: .6s;
+}
+#banner .banner_slider .banner_ctn p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1D1D1D;
+    margin: 15px 0;
+    transition: .7s;
+}
+
+#banner .banner_slider .banner_ctn a{
+    transition: 0.9s;
+}
+
+#banner {
+    position: relative;
+}
+
+#banner .slick-dots{
+    position: absolute;
+    bottom: 15%;
+    left: 100px;
+}
+#banner .slick-dots button{
+    width: 25px;
+    height: 12px;
+    border: none;
+    color: transparent;
+    border-radius: 6px;
+    transition: 0.5s; 
+}
+#banner .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#banner .slick-dots .slick-active button{
+    width: 40px;
+    background-color: var(--primaryColor);
+}
+#banner .banner_slider .banner_ctn > * {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+#banner .banner_slider.slick-active .banner_ctn > * {
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* Banner End*/
+
+/* Banner Catagori */
+
+#catagori {
+    padding: 50px 0;
+}
+  
+#catagori .categori_card img {
+    width: 100%;
+    display: block;
+}
+  
+#catagori .categori_card:nth-child(1){
+    margin-bottom: 15px;
+}
+#catagori .categori_card {
+    position: relative;
+}
+#catagori .categori_card .overlay {
+    background-color: rgb(17, 22, 30,0.4);
+    position: absolute;
+    inset: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: 0.5s ease;
+    transform: scaleY(0);
+}
+#catagori .categori_card:hover .overlay{
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+#catagori .categori_card .overlay h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 20%;
+}
+
+#catagori .categori_card .overlay a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+#catagori .categori_card .overlay a span {
+    margin-left: 10px;
+}
+
